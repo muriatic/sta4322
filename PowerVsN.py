@@ -79,7 +79,7 @@ class PowerVsN(Scene):
         left_inf = axes.plot(lambda mu_: 0, x_range=[x_min, mu_0], color=WHITE, stroke_width=7)
         right_inf = axes.plot(lambda mu_: 1, x_range=[mu_0, x_max], color=WHITE, stroke_width=7)
         inf_label = MathTex(r"n=\infty", color=WHITE).scale(0.8)
-        inf_label.to_corner(UR).shift(DOWN*0.5 + LEFT*0.4)
+        inf_label.to_corner(UR).shift(DOWN*1.0 + LEFT*0.4)
 
         # Show both the first (y=0) segment and the label together
         self.play(Create(left_inf), Create(inf_label))
